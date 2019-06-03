@@ -1,0 +1,105 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\lucas\Documents\GitHub\EE371Lab4\Processor\cpu.qsys --block-symbol-file --output-directory=C:\Users\lucas\Documents\GitHub\EE371Lab4\Processor\cpu --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Processor/cpu.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu_nios [altera_nios2_gen2 17.0]
+Progress: Parameterizing module cpu_nios
+Progress: Adding difference_pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module difference_pio
+Progress: Adding image_pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module image_pio
+Progress: Adding input_pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module input_pio
+Progress: Adding jtag [altera_avalon_jtag_uart 17.0]
+Progress: Parameterizing module jtag
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 17.0]
+Progress: Parameterizing module onchip_memory
+Progress: Adding output_pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module output_pio
+Progress: Adding sdram [altera_avalon_new_sdram_controller 17.0]
+Progress: Parameterizing module sdram
+Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 17.0]
+Progress: Parameterizing module sys_sdram_pll_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 17.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cpu.difference_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu.input_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: cpu.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: cpu.sys_sdram_pll_0: Refclk Freq: 50.0
+Info: cpu.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: cpu.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\lucas\Documents\GitHub\EE371Lab4\Processor\cpu.qsys --synthesis=VERILOG --output-directory=C:\Users\lucas\Documents\GitHub\EE371Lab4\Processor\cpu\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Processor/cpu.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu_nios [altera_nios2_gen2 17.0]
+Progress: Parameterizing module cpu_nios
+Progress: Adding difference_pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module difference_pio
+Progress: Adding image_pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module image_pio
+Progress: Adding input_pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module input_pio
+Progress: Adding jtag [altera_avalon_jtag_uart 17.0]
+Progress: Parameterizing module jtag
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 17.0]
+Progress: Parameterizing module onchip_memory
+Progress: Adding output_pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module output_pio
+Progress: Adding sdram [altera_avalon_new_sdram_controller 17.0]
+Progress: Parameterizing module sdram
+Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 17.0]
+Progress: Parameterizing module sys_sdram_pll_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 17.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cpu.difference_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu.input_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: cpu.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: cpu.sys_sdram_pll_0: Refclk Freq: 50.0
+Info: cpu.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: cpu.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: cpu: Generating cpu "cpu" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src5 and cmd_mux_005.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src7 and cmd_mux_007.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src8 and cmd_mux_008.sink0
+Info: Inserting clock-crossing logic between rsp_demux_005.src0 and rsp_mux.sink5
+Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
+Info: Inserting clock-crossing logic between rsp_demux_007.src0 and rsp_mux.sink7
+Info: Inserting clock-crossing logic between rsp_demux_008.src0 and rsp_mux.sink8
+Info: cpu_nios: "cpu" instantiated altera_nios2_gen2 "cpu_nios"
+Info: difference_pio: Starting RTL generation for module 'cpu_difference_pio'
+Info: difference_pio:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_difference_pio --dir=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0109_difference_pio_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0109_difference_pio_gen//cpu_difference_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: difference_pio: Done RTL generation for module 'cpu_difference_pio'
+Info: difference_pio: "cpu" instantiated altera_avalon_pio "difference_pio"
+Info: image_pio: Starting RTL generation for module 'cpu_image_pio'
+Info: image_pio:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_image_pio --dir=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0110_image_pio_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0110_image_pio_gen//cpu_image_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: image_pio: Done RTL generation for module 'cpu_image_pio'
+Info: image_pio: "cpu" instantiated altera_avalon_pio "image_pio"
+Info: input_pio: Starting RTL generation for module 'cpu_input_pio'
+Info: input_pio:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_input_pio --dir=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0111_input_pio_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0111_input_pio_gen//cpu_input_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: input_pio: Done RTL generation for module 'cpu_input_pio'
+Info: input_pio: "cpu" instantiated altera_avalon_pio "input_pio"
+Info: jtag: Starting RTL generation for module 'cpu_jtag'
+Info: jtag:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=cpu_jtag --dir=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0112_jtag_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0112_jtag_gen//cpu_jtag_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag: Done RTL generation for module 'cpu_jtag'
+Info: jtag: "cpu" instantiated altera_avalon_jtag_uart "jtag"
+Info: onchip_memory: Starting RTL generation for module 'cpu_onchip_memory'
+Info: onchip_memory:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=cpu_onchip_memory --dir=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0113_onchip_memory_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/lucas/AppData/Local/Temp/alt7675_7849953476388330337.dir/0113_onchip_memory_gen//cpu_onchip_memory_component_configuration.pl  --do_build_sim=0  ]
